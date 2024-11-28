@@ -1,0 +1,22 @@
+//  amstrong num
+
+#include<stdio.h>
+#include<math.h>
+void main ()
+{
+    int e=1,b=1000,c=0,d=0,a;
+    for(;e<=b;e++)
+    {
+        a=e;
+        d=0;
+        for(;a>0;a/=10)
+        {
+            c=a%10;
+            d+=pow(c,3);
+        }
+        if(d==e)
+        {
+            printf("%d ",e);
+        }
+    }
+}
